@@ -1,0 +1,87 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+/* Overwrite default styles of hr */
+
+hr {
+    border: 1,5px solid #956088;
+    margin-bottom: 25px;
+}
+
+table {
+    background-color: transparent;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+table th,
+table td {
+    padding: 0.75rem;
+    vertical-align: middle;
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: rgb(179, 208, 255, 0.3)
+}
+
+.input:: placeholder {
+    display: inline;
+    width: 100%;
+    lenght: auto
+}
+
+a#nav-link-selected {
+    color: rgb(0, 0, 0, 1);
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 12px 16px;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 6px 12px 6px 12px;
+    margin: 12px;
+}
+
+p {
+    background-color: lightblue;
+    padding: 6px 12px 6px 12px;
+    margin: 12px;
+}
+

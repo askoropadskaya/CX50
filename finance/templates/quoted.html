@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+        <p>Todays trending</p>
+        <div class="mb-3">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Company Name</th>
+                        <th>Previous Close</th>
+                        <th>Latest Price</th>
+                        <th>Market Cap</th>
+                        <th>P/E Ratio</th>
+                        <th>Currency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ data.symbol }}</td>
+                        <td>{{ data.companyName }}</td>
+                        <td>{{ data.previousClose }}</td>
+                        <td>{{ data.latestPrice | usd }}</td>
+                        <td>{{ data.marketCap }}</td>
+                        <td>{{ data.peRatio }}</td>
+                        <td>{{ data.currency }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+{% endblock %}

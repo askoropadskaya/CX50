@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+
+
+<table>
+    <p>Welcome to the C$50 Finance!</p>
+
+    <thead>
+        <tr>
+        <!-- <th>Stock You Own</th> -->
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Current Price</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Loop through the database entries to display them in this table -->
+        {% for s in stocks %}
+            <tr>
+                <td>{{ s.symbol }}</td>
+                <td>{{ s.name }}</td>
+                <td>{{ s.number }}</td>
+                <td>{{ s.price | usd }}</td>
+                <td>{{ s.total | usd }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+        <tfoot>
+
+            <tr><hr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th>Cash</th>
+                <th>{{ cash | usd }}</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th>TOTAL</th>
+                <th>{{ total | usd }}</th>
+            </tr>
+        </tfoot>
+</table>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+        <p>Todays trending</p>
+        <div class="mb-3">
+            <p> A share of {{ data.symbol }} ({{ data.symbol }}) costs {{ data.price | usd }}.
+        </div>
+
+{% endblock %}
