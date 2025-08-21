@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+
+    <form action="/" method="get">
+        <div class="input-form"> 
+            <label class="w3-text"><b>{{ message }}</b></label>
+            <br>
+            <br>
+            <button class="submit-form-button" type="submit">Go Back</button>
+        </div>
+    </form>
+
+{% endblock %}

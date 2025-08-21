@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    About
+{% endblock %}
+
+
+{% block main %}
+<form action="/" method="get">
+    <p style="font-size: large; font-weight: bold; color: #E2E2E2;" >
+        Project name - Family Movie Night
+        <br>
+        Author - Hanna Skoropadska
+        <br>
+        Location - Walnut Creek, California, USA
+    </p>
+    <br>
+    <br>
+    {% if session["user_id"] %}
+    <button class="submit-form-button" type="submit">Go Back</button>
+    {% endif %}
+</form>
+<p>
+{% endblock %}
