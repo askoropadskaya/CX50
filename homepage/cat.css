@@ -1,0 +1,78 @@
+.centered {
+    text-align: center;
+}
+
+.large {
+    font-size: large;
+}
+
+.medium {
+    font-size: medium;
+}
+
+.small {
+    font-size: small;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 48px;
+}
+
+body {
+    background-color: #956088;
+    color: #E5E9EC;
+    font-weight: 400;
+    line-height: 2.5;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    margin-right: 80px;
+    margin-left: 80px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 30px;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 1.5;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+}
+
+div {
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 1.5;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+}
+
+#title {
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 1.5;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+}
+
+footer {
+    text-align: right;
+}
+
+#hp  {
+    float: left;
+     margin: 0 30px 0 0;
+}
+
+a:hover {
+    color: white
+}
+
+a {
+    color: white
+}

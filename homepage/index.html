@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="initial-scale=1, width=device-width" >
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+
+        <title>Cat_homepage</title>
+
+  </head>
+
+  <body class="centered">
+    <h1>Welcome cat lovers!
+      <span class="badge bg-secondary">YOY</span>
+    </h1>
+
+    <header class="large">
+      <div id="title">    What do you know about cat?    </div>
+    </header>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+        <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://animalsresearch.com/wp-content/uploads/2023/09/Abyssinian2.jpg" class="card-img-top" alt="Aby">
+                    <div class="card-body">
+                      <h2 class="card-title">Abyssinian</h2>
+                      <p class="card-text">Curious, Sensible, Loyal, Intelligent, Willful, Extroverted.</p>
+                      <a href="aby.html" class="card-link">Learn more</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://catinaflat.blog/wp-content/uploads/2022/07/siamese-cat-origins.jpg" class="card-img-top" alt="Siamese">
+                    <div class="card-body">
+                      <h2 class="card-title">Siamese</h2>
+                      <p class="card-text">Sociable, Intelligent, Affectionate, Sensitive, Vocal, Playful.</p>
+                      <a href="siamese.html" class="card-link">Learn more</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://i.redd.it/q4gds39kary61.jpg" class="card-img-top" alt="British">
+                    <div class="card-body">
+                      <h2 class="card-title">British Shorthair</h2>
+                      <p class="card-text">Undemanding, Intelligent, Easygoing, Affectionate, Quiet.</p>
+                      <a href="british.html" class="card-link">Learn more</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://preview.redd.it/considering-a-maine-coon-cat-seeking-insights-v0-ixxwnw3ywreb1.jpg?auto=webp&s=3d82a68133593f12c37dc3686653585b0f038588" class="card-img-top" alt="Maine_Coon">
+                    <div class="card-body">
+                      <h2 class="card-title">Maine Coon</h2>
+                      <p class="card-text">Sociable, Trainable, Intelligent, Agile, Vocal, Playful.</p>
+                      <a href="maine_coon.html" class="card-link">Learn more</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+    <footer class="medium">Date and Time: <span id="datetime"></span>
+      <script>
+            function updateDateTime() {
+              let date = new Date();
+              let currentDateTime = date.toLocaleString();
+              document.querySelector('#datetime').textContent = currentDateTime;
+            }
+            // to call the `updateDateTime` function every second
+            setInterval(updateDateTime, 1000);
+      </script>
+
+    </footer>
+
+  </body>
+</html>
