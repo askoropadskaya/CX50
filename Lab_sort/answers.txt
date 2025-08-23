@@ -1,0 +1,14 @@
+sort1 uses: Bubble sort
+
+How do you know?: I have tried to sort a sorted file with 10000 numbers and it took - 0.048s compared to sort3 which took 0.129s in this case.
+1.327s took to sort sorted50000.txt and it took the most time to sort reversed50000.txt file - 5.977s It makes sense considering that all numbers
+are in reversed order initially.
+
+sort2 uses: Merge sort
+
+How do you know?: This took the least amount of time in sorting unsorted10000.txt file - 0.076s
+
+sort3 uses: Selection sort
+
+How do you know?: It is the slowest sort for sorted files. To sort sorted50000.txt - it took 2.698s. To be sure I have tried to sort
+the reversed50000.txt file - it took 3.213s which is faster than using bubble sort.
